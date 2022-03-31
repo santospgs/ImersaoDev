@@ -1,0 +1,66 @@
+@import url('http://fonts.cdnfonts.com/css/sf-pixelate');
+
+* {
+    text-align: center;
+    font-family: 'SF Pixelate', sans-serif;
+  }
+  
+  body {
+    /*font-family: "Roboto Mono", monospace;*/
+    
+    min-height: 400px;
+    background-image: url("https://t4.ftcdn.net/jpg/02/39/45/37/360_F_239453726_6rjXgbVs6RLXaxPU2eG11UKjLV2aMomJ.jpg");
+    background-color: #111;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  table {
+    border: 0px solid white;
+    border-collapse: collapse;
+  }
+  
+  h1 {
+    color: white;
+  }
+  
+  th,
+  tr,
+  td {
+    border-bottom: solid 1px white;
+    color: white;
+  }
+
+#erro{
+  color: red;
+  font-size: 12px;
+}
+  

@@ -1,0 +1,275 @@
+@import url("https://fonts.cdnfonts.com/css/flash-rogers");
+
+
+body {
+    font-family: "Flash Rogers", sans-serif;
+    min-height: 854px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("https://media.wired.com/photos/593239e04dc9b45ccec5cb0b/master/w_1600%2Cc_limit/hallofjustice.png");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+        1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    cursor: url(https://cdn.custom-cursor.com/128/assets/arrows/32/Batman_Classic_Cursor.png) , default!important;    
+}
+
+.container {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 2px;
+    border: none;
+    font-size: 1rem;
+    font-family: "Flash Rogers", sans-serif;
+    box-shadow: 2px 2px #000;
+    cursor: url(https://cdn.custom-cursor.com/128/assets/pointers/32/Batman_Classic_Cursor.png) , pointer!important;
+}
+
+#atributos{
+    cursor: url(https://cdn.custom-cursor.com/128/assets/pointers/32/Batman_Classic_Cursor.png) , pointer!important;
+}
+
+button #btnJogar {
+    position: relative;
+}
+
+h2 {
+    color: white;
+}
+
+#carta-jogador {
+    width: 360px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+#carta-jogador h3 {
+    text-align: center;
+}
+
+.carta-imagem {
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px;
+}
+
+.carta-imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.carta-status {
+    height: 160px;
+    margin: 1.5rem;
+}
+
+.carta-status input {
+    margin: 20px 10px;
+}
+
+.opcoes, #resultado {
+    color: white;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+#resultado {
+    display: none;
+    background-image: url("https://i0.wp.com/high-valyou.com/wp-content/uploads/2019/03/kisspng-black-and-white-car-speech-bubble-5a7400424430f7.3216222415175516822793.png?ssl=1");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 150px;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -30%);
+    /*border: 1px solid red;*/
+}
+
+#resultado p {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    cursor: url(https://cdn.custom-cursor.com/128/assets/arrows/32/Batman_Classic_Cursor.png) , default!important;
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+/*form *{
+    border: 1px solid yellow;
+}*/
+
+/* CARDS FLIP*/
+
+/*? CARDS JOGADOR */
+div {
+    width: 100%;
+    height: 100%;
+}
+
+#atributoCartaJogador, #atributoCartaMaquina{
+    font-size: x-large;
+    position: fixed;
+    top: 300px;
+    max-height: 80px;
+}
+
+#nomeCarta{
+    position: fixed;
+    top: 0px;
+}
+
+#imgCarta{
+    position: fixed;
+    top: 50px;
+    max-height: 300px;
+}
+
+#escolhaText{
+    position: fixed;
+    top: 243px;
+    font-size: 20px;
+}
+
+#opcoes{
+    position: fixed;
+    top: 290px;
+    height: 100px;
+}
+
+.containerCardJogador {
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    transition: transform 0.2s;    
+}
+
+.cardJogador {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.containerCardJogador:hover{
+    transform: scale(1.05);
+}
+
+.frontJogador, .backJogador {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: transform .2s;
+}
+
+.frontJogador {
+    /*border: 2px solid black;*/
+    background-image: url("cardGameBack.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.backJogador {
+    /*border: 2px solid black;*/
+    background-image: url("cardGameFront.png");
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+/*! CARDS MAQUINA */
+
+#nomeCartaMaquina{
+    position: fixed;
+    top: 0px;
+}
+
+#imgCartaMaquina{
+    position: fixed;
+    top: 50px;
+    max-height: 300px;
+}
+
+.containerCardMaquina {
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    transition: transform 0.2s;
+}
+
+.cardMaquina {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.containerCardMaquina:hover  {
+    transform: scale(1.05);
+}
+
+.frontMaquina, .backMaquina {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.frontMaquina {
+    /*border: 2px solid black;*/
+    background-image: url("cardGameBackPC.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.backMaquina {
+    /*border: 2px solid black;*/
+    background-image: url("cardGameFrontPC2.png");
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Imersão Dev - Aula 07</title>
+        <link rel="stylesheet" href="global.css" />
+    </head>
+
+    <body>
+        <div class="container" id="container">
+            <img
+                src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png"
+                class="page-logo"
+                alt=""
+            />
+            <h1 class="page-title">Justice League Combat Simulator</h1>
+
+            <button onclick="sortearCarta()" id="btnSortear">
+                Sortear Herói
+            </button>
+
+            <form id="form">
+                <div class="containerCardJogador">                    
+                    <div class="cardJogador" id="cardJogador">
+                        <div class="frontJogador"></div>
+                        <div class="backJogador">
+                            <div id="nomeCarta"></div>
+                            <div id="imgCarta"></div>
+                            <h2 id="escolhaText">Escolha o seu atributo</h2>
+                            <div class="opcoes" id="opcoes"></div>
+                            <div id="atributoCartaJogador"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerCardMaquina">
+                    <div class="cardMaquina" id="cardMaquina">
+                        <div class="frontMaquina"></div>
+                        <div class="backMaquina">
+                            <div id="nomeCartaMaquina"></div>
+                            <div id="imgCartaMaquina"></div>
+                            <div id="atributoCartaMaquina"></div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div id="resultado"></div>
+            </form>
+            <button type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+        </div>
+    </body>
+</html>
+<script src="script.js"></script>
